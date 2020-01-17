@@ -1,0 +1,9 @@
+﻿@model List<Movie>
+<a href="/Movies/Create">Film Maken</a>
+<ul>
+    @foreach(var movie in Model)
+    {
+        <li><a href="/Movies/Update/@movie.Id">@movie.Name @movie.DurationInSeconds</a></li>
+    }
+
+</ul>

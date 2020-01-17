@@ -1,0 +1,8 @@
+﻿@model Movie
+@using (Html.BeginForm("Update",null,FormMethod.Post))
+{
+    @Html.HiddenFor(m=>m.Id)
+    @Html.EditorFor(m=>m.Name)
+    @Html.EditorFor(m=>m.DurationInSeconds)
+    <input type="submit" value="opslaan"/>
+}
